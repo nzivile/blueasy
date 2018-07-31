@@ -1,0 +1,747 @@
+/*
+ * GENERAL STYLES
+ */
+* {
+    box-sizing: border-box;
+}
+
+html, body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Segoe UI";
+}
+
+a {
+    display: block;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*
+ * HEADER STYLES
+ */
+header {
+    background-color: rgba(53, 63, 70, 0.85);
+    position: relative;
+    z-index: 10;
+}
+
+.menu {
+    padding-top: 52px;
+    padding-bottom: 52px;
+}
+
+.navigation a {
+    padding: 10px 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: 2px solid transparent;
+    transition: 0.2s all ease-in; /* animacijos borderiui */
+}
+
+.navigation a:hover, .navigation a.active {
+    color: #4bcaff;
+    border: 2px solid #4bcaff;
+
+}
+
+.logo span {
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+}
+
+.logo .blue {
+    color: #4bcaff;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.header-photo {
+    height: 800px;
+    filter: grayscale(100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+    z-index: 2;
+    margin-top: -150px;
+    padding-top: 150px;
+}
+
+.header-photo .slider {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-photo .slider .slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.3s all ease-in;
+}
+
+.header-photo .slider .slide.active {
+    width: 3000%;
+}
+
+.header-photo .main-text {
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    background-color: rgba(75, 202, 255, 0.15);
+    position: relative;
+    z-index: 1;
+}
+
+.header-photo h2 {
+    color: white;
+    background-color: rgba(59, 69, 77, 0.76);
+    padding: 16px;
+    font-weight: 300;
+    font-size: 37px;
+    margin: 0 0 12px 0;
+}
+
+/*
+ * HEADER STYLES
+ */
+*
+*:before,
+*:after {
+    Box-sizing- border-box;
+}
+
+/* taip turi buti visada. */
+body {
+    margin: 0;
+}
+
+.services {
+    padding: 80px 0;
+    background-color: #4bcaff;
+}
+
+.services .service-list li {
+    width: 22%;
+}
+
+.services .services-title {
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 0 0 10px 0;
+    margin: 0;
+}
+
+.underline {
+    width: 45px;
+    height: 2px;
+    margin: 0 0 40px 0;
+}
+
+.underline.white {
+    background-color: white;
+}
+
+.underline.grey {
+    background-color: #515f67;
+}
+
+.services .service-list img {
+    display: block;
+    width: 38px;
+    height: 50px;
+    margin: 0 0 24px 0;
+}
+
+.services .service-head {
+    display: block;
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0 0 19px 0;
+}
+
+.services .service-p {
+    color: white;
+    font-size: 12px;
+}
+
+.photo-album {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.photo-album .photo-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #515f67;
+    font-weight: 300;
+    padding: 0 0 10px 0;
+    margin: 0;
+}
+
+.navigation.grey a {
+    padding: 8px 16px;
+    color: #515f67;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    border: 2px solid transparent;
+    transition: 0.2s all ease-in; /* animacijos borderiui */
+}
+
+.navigation.grey a:hover, .navigation.grey a.active {
+    color: #4bcaff;
+    border: 2px solid #4bcaff;
+}
+
+.photo-gallery {
+    transition: 0.2s all ease-in; /* animacijos borderiui */
+}
+
+.photo-gallery.hidden {
+    display: none;
+}
+
+.photo-gallery img {
+    margin-bottom: 30px;
+    width: 270px;
+    height: 270px;
+    filter: grayscale(100%);
+    transition: 0.2s all ease-in;
+}
+
+.photo-gallery img:hover {
+    filter: grayscale(0%);
+    width: 290px;
+    height: 290px;
+}
+
+.gallery .gallery-list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.just-section {
+    padding: 80px 0px;
+    background-color: #515f67;
+}
+
+.just {
+    font-size: 30px;
+    color: white;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.paragraph {
+    font-size: 14px;
+    color: white;
+}
+
+.just-section .visit-button {
+    display: inline-block;
+    font-size: 14px;
+    color: #353f46;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid #353f46;
+    padding: 10px 40px;
+    margin-top: 35px;
+    cursor: pointer;
+    transition: 0.2s all ease-in; /* animacijos borderiui */
+}
+
+.just-section .visit-button:hover {
+    color: #4bcaff;
+    border: 2px solid #4bcaff;
+}
+
+.just-section .flex-container {
+    align-items: flex-start;
+}
+
+.just-section .just-section-text {
+    max-width: 470px;
+}
+
+.text {
+    margin: 0 0 30px 0;
+}
+
+.text_no_margin {
+    margin: 0;
+}
+
+.video {
+    padding: 0 0 0 142px;
+}
+
+.twitter {
+    padding: 80px 0px;
+    background-color: #4bcaff;
+}
+
+.twitter .container {
+    position: relative;
+}
+
+.twitter .twitter_icon {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(../icons/twitter.svg) no-repeat center center;
+    background-size: contain;
+}
+
+.twitter .twitter_text {
+    font-size: 28px;
+    line-height: 50px;
+    color: white;
+    font-weight: 300;
+}
+
+.who {
+    padding: 80px 0px;
+    background: url("../images/photographer-compressor.jpg") no-repeat;
+    background-position: 50% 45%;
+    height: 505px;
+    position: relative;
+}
+
+.who::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.who .container {
+    position: relative;
+    z-index: 1;
+}
+
+.who .side-text {
+    padding-top: 91px;
+}
+
+.who .side-text .icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.who .side-text .icons li {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px white solid;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.2s all ease-in; /* animacijos borderiui */
+}
+
+.who .side-text .icons li:hover {
+    border: 2px solid #4bcaff;
+}
+
+.who .side-text .icons li img {
+    width: 30px;
+    height: 30px;
+}
+
+.testimonials {
+    padding: 80px 0px;
+    background-color: #ffffff;
+}
+
+.testi {
+    font-size: 30px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.testimonials .testimonials_text {
+    font-size: 28px;
+    line-height: 50px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.twitter .container {
+    position: relative;
+}
+
+.testimonials_logo {
+    font-size: 14px;
+    color: #4bcaff;
+}
+
+.testimonials .testimonials_icon {
+    background: url("../icons/quates.svg") no-repeat center center;
+    background-size: contain;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.testimonials .container {
+    position: relative;
+}
+
+.contact {
+    background: url("../images/contact-compressor.jpg");
+    padding: 80px 0px;
+    background-position: 50% 100%;
+    position: relative;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.contact .container {
+    position: relative;
+    z-index: 1;
+}
+
+.contact_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact_row > div {
+    width: 45%;
+}
+
+.message {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    margin: 0px 0px 10px;
+}
+
+.input {
+    border: 2px solid white;
+    width: 100%;
+    line-height: 55px;
+    color: white;
+    font-size: 16px;
+    height: 55px;
+    padding-left: 10px;
+    background: transparent;
+    outline: none;
+    transition: 0.5s all ease-in; /* animacijos borderiui */
+    letter-spacing: 1px;
+}
+
+.input:focus {
+    border: 2px solid #4bcaff;
+}
+
+.input.textarea {
+    line-height: inherit;
+    height: 220px;
+    font-family: "Segoe UI";
+}
+
+.contact_row .right-side {
+    margin-top: 22px;
+    color: white;
+}
+
+.contact_row .inputs > div {
+    margin-bottom: 35px;
+}
+
+.contact .submit_button {
+    width: 370px;
+    background-color: #4bcaff;
+    padding: 25px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    margin-top: 40px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s all ease-in; /* animacijos borderiui */
+}
+
+.contact .submit_button:hover {
+    background-color: rgba(75, 202, 255, 0.71);
+}
+
+footer {
+    padding: 80px 0;
+    background-color: #353f47;
+}
+
+footer .copyright {
+    color: #515f67;
+    font-weight: bold;
+}
+
+footer .nav {
+    display: flex;
+    flex-direction: row;
+    color: #515f67;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+footer .nav li {
+    margin: 0 15px;
+}
+
+footer .nav li div {
+    position: relative;
+    transition: 0.2s all ease-in; /* animacijos borderiui */
+    cursor: pointer;
+}
+
+footer .nav li div:hover {
+    color: #4bcaff;
+}
+
+/**
+    footerio desinysis |
+ */
+footer .nav li div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -15px;
+    width: 1px;
+    background-color: #515f67;
+}
+
+footer .nav li:first-child {
+    margin-left: 0;
+}
+
+footer .nav li:last-child {
+    margin-right: 0;
+}
+
+footer .nav li:last-child div::before {
+    display: none;
+}
+
+/**
+    Responsive
+ */
+@media only screen and (max-width: 1200px) {
+    header {
+        padding: 0px 20px;
+    }
+
+    .header-photo h2 {
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .services {
+        padding: 80px 20px;
+    }
+
+    .photo-album {
+        padding: 80px 20px;
+    }
+
+    .gallery {
+        padding: 0 20px;
+    }
+
+    .just-section {
+        padding: 80px 20px;
+    }
+
+    .just-section .container {
+        flex-direction: column;
+    }
+
+    .just-section .container > div {
+        width: 100%;
+        padding: 0;
+        max-width: none;
+    }
+
+    .just-section .just-section-text {
+        margin-bottom: 20px;
+    }
+
+    .just-section .video iframe {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .twitter {
+        padding: 80px 20px;
+    }
+
+    .who {
+        padding: 80px 20px;
+    }
+
+    .who .container > div {
+        width: 45%;
+    }
+
+    .testimonials {
+        padding: 80px 20px;
+    }
+
+    .contact {
+        padding: 80px 20px;
+    }
+
+    footer {
+        padding: 80px 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu .logo {
+        margin-bottom: 20px;
+    }
+
+    .services .service-list {
+        flex-wrap: wrap;
+    }
+
+    .services .service-list li {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .photo-album .container {
+        flex-direction: column;
+    }
+
+    .who .container {
+        flex-direction: column;
+    }
+
+    .who {
+        height: auto;
+    }
+
+    .who .side-text {
+        padding-top: 29px;
+    }
+
+    .who .container > div {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .just-section .video iframe {
+        width: 100%;
+    }
+
+    .contact .contact_row {
+        flex-direction: column-reverse;
+    }
+
+    .contact .contact_row > div {
+        width: 100%;
+    }
+
+    .contact .submit_button {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .menu .navigation {
+        flex-direction: column;
+    }
+
+    .services .service-list li {
+        width: 100%;
+    }
+
+    .photo-album .container .navigation {
+        flex-direction: column;
+    }
+
+    footer .container {
+        flex-direction: column;
+    }
+
+    footer .nav {
+        flex-direction: column;
+    }
+
+    footer .nav li {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    footer .nav li div::before {
+        display: none;
+    }
+
+    footer .nav li:first-child {
+        margin-left: 15px;
+    }
+}
